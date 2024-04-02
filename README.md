@@ -1,44 +1,70 @@
-# Recipe Book Website
+# Getting Started with Create React App
 
-This repository contains a simple web application for displaying different recipes. The application consists of two main pages - the "Recipes List" page and the "Recipe Detail" page. The goal of this project is to create a user-friendly recipe book website that allows users to explore various recipes and view detailed information about each recipe.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Contributors
+## Available Scripts
 
-- Aeden
-- Rethabile
+In the project directory, you can run:
 
-## Objective
+### `npm start`
 
-The objective of this project is to create a simple web application that allows users to browse and access different recipes. The application should have the following features:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-1. **Recipes List Page**: This is the main page where all the recipes are listed. Each recipe item should display the title and a short description. Clicking on a recipe item should navigate to the Recipe Detail page for that specific recipe.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-2. **Recipe Detail Page**: This page should provide more detailed information about the selected recipe, including ingredients, preparation steps, and a picture if available. The page should also include a back button that allows users to navigate back to the Recipes List page.
+### `npm test`
 
-## Requirements
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-To fulfill the objective of this project, the following requirements should be met:
+### `npm run build`
 
-1. **State Management**: The application should have a state to manage the list of recipes. Each recipe should be represented as an object with properties such as title, short description, ingredients, preparation steps, and a picture URL. The state should be managed using the `useState` hook.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-2. **Routing**: React Router should be used to manage routing in the application. The Recipes List page should be accessible via the "/" path, and each Recipe Detail page should have a unique identifier in the path, following the "/recipe/:id" format.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Getting Started
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-To get started with the project, follow these steps:
+### `npm run eject`
 
-1. Clone the repository: `git clone https://github.com/your-username/recipe-book-website.git`
-2. Install the dependencies: `npm install`
-3. Start the development server: `npm start`
-4. Open your web browser and visit `http://localhost:3000` to view the application.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Technologies Used
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- React.js
-- React Router
-- HTML
-- CSS
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Conclusion
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-This project aims to provide a recipe book website with an intuitive user interface for browsing and accessing various recipes. By following the requirements and getting started guide, you can contribute to this project and enhance its functionality. We welcome any feedback or contributions to make this recipe book website even better. Happy cooking!
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
