@@ -1,6 +1,6 @@
 // import React from 'react';
 import StarRating from './StarRating';
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import './App.css';
 import bigImage from './images/IMG_7183.jpg';
 
@@ -14,6 +14,31 @@ const FatCakeDetails = () => {
     const toggleHeartColor = () => {
       setHeartRed(!isHeartRed);
     };
+
+    useEffect(() => {
+        // Select the element you want to observe
+        const steps = document.querySelector('.step-list');
+    
+        // Create an intersection observer
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            // If the element is in the viewport, add a class that triggers the animation
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate');
+            } else {
+              entry.target.classList.remove('animate');
+            }
+          });
+        });
+    
+        // Start observing the element
+        observer.observe(steps);
+    
+        // Clean up the observer when the component unmounts
+        return () => observer.disconnect();
+      }, []);
+    
+
 
   return (
     <div>
@@ -36,7 +61,7 @@ const FatCakeDetails = () => {
             
             <div className='stars'>
                 <StarRating rating={4} />
-                <p>(99 reviews)</p>
+                <p> 4 (99 reviews)</p>
                 </div>   
                        
     <div className='icons'>
@@ -59,11 +84,18 @@ const FatCakeDetails = () => {
             <p>Bite through the crispy exterior of a freshly baked vetkoek into the soft goodness inside. <br></br>This is something every South African can identify with. This easy vetkoek recipe is simple to prepare and delicious.</p>
             </div>
 
+        <div className='ingredients-title'> INGREDIENTS</div>
             <ul class="ingredients-list">
             <li><i class="fas fa-check-double"></i> Ingredient 1</li>
             <li><i class="fas fa-check-double"></i> Ingredient 2</li>
             <li><i class="fas fa-check-double"></i> Ingredient 3</li>
             </ul>
+<div className='steps-title'> STEPS </div>
+            <ol class="step-list">
+            <li class="step">Step 1: Do this</li>
+            <li class="step">Step 2: Do that</li>
+            <li class="step">Step 3: Do something else</li>
+            </ol>
             
 
  </div>

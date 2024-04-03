@@ -45,7 +45,7 @@
 
 }
 .stars p {
-  /* margin-left: 100px; */
+  margin-left: 20px; 
   margin-top: 10px;
   color: black;
 
@@ -111,7 +111,7 @@
 }
 
 .descriptionstitle {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   text-align: start; /* or use 'left' */
   margin-top: 20px;
@@ -123,9 +123,17 @@
   color: black;
 }
 
+.ingredients-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: start; /* or use 'left' */
+  margin-top: 20px;
+  padding-left: 100px; /* Adjust this value as needed */
+}
+
 .ingredients-list {
   list-style-type: none; /* Remove default bullet points */
-  padding: 0;
+  padding: 0 0 0 100px; /* Top padding 0, right padding 0, bottom padding 0, left padding 100px */
 }
 
 .ingredients-list li {
@@ -134,4 +142,61 @@
 
 .ingredients-list i {
   margin-right: 5px; /* Add space between the icon and the text */
+}
+
+.steps-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: start; /* or use 'left' */
+  margin-top: 20px;
+  padding-left: 100px; /* Adjust this value as needed */
+}
+
+
+
+.step-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-left: 100px;
+}
+
+.step {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  animation: appear 2s linear forwards;
+  position: relative;
+  left: -50px; /* Start 50px to the left */
+  padding: 10px; /* Add some padding */
+  margin-bottom: 10px;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    left: 0; /* End at the normal position */
+  }
+}
+
+.step:nth-child(1) {
+  animation-delay: 1s;
+  background-color: brown; /* Red */
+}
+
+.step:nth-child(2) {
+  animation-delay: 2s;
+  top: 20px; /* Offset by 20px */
+  background-color: rgb(243, 153, 153); /* Green */
+}
+
+.step:nth-child(3) {
+  animation-delay: 3s;
+  top: 40px; /* Offset by 40px */
+  background-color:rgb(90, 3, 3) /* Blue */
+}
+
+.animate {
+  transition: opacity 1s ease-in-out;
+  animation: appear 2s linear forwards;
 }
