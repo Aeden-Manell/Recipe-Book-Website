@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-links a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #777;
+}
+
+.navbar-search {
+  margin: 0 10px;
+  padding: 5px;
+}
+.product-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: start; /* or use 'left' */
+  margin-top: 20px;
+  padding-left: 20px; /* Adjust this value as needed */
+}
+.stars{
+  color: gold;
+  font-weight: bold;
+  text-align: start;
+  margin-top: 10px;
+  padding-left: 20px; /* Adjust this value as needed */
+
+}
