@@ -17,7 +17,11 @@ const LeaveReviewForm = () => {
   return (
     <div className='wrapper-div'>
 <div className="wrapper">
-      <h3>Lorem ipsum dolor sit amet.</h3>
+      <h1 id='h3-wrapper'>Share Your <br></br>Feedback on our Recipes</h1>
+      <p className='p-wrapper'>Your feedback helps us improve and create even more delicious dishes 
+      for our community. Whether it's a rave review, a helpful suggestion, 
+      or a constructive critique, please take a moment to share your thoughts below.
+       We appreciate your contribution and look forward to reading your review!</p>
       <form onSubmit={handleSubmit}>
         <div className="rating">
           <input type="number" name="rating" hidden />
@@ -25,7 +29,7 @@ const LeaveReviewForm = () => {
             <i key={i} className="bx bx-star star" style={{ '--i': i }}></i>
           ))}
         </div>
-        <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+        <textarea name="opinion" cols="30" rows="6" placeholder="Your opinion..."></textarea>
         <div className="btn-group">
           <button type="submit" className="btn submit">Submit</button>
           <button className="btn cancel">Cancel</button>

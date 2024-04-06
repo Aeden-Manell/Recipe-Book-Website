@@ -13,9 +13,9 @@ const Navbar = () => {
         <ul>
           <li class="big-screens">
 
-            <Link to="/">Home</Link>
-            <Link to="/ourstory">Our Story</Link>
+            <Link to="/">Home</Link>            
             <Link to="/ourrecipes">Our Recipes</Link>
+            <Link to="/ourstory">Our Story</Link>
             <Link to="/reviews">Reviews</Link>
             <Link to="/contact" id="contact-btn">Contact</Link>
           </li>

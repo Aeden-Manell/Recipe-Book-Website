@@ -1,10 +1,32 @@
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+/*font-family: "Inknut Antiqua", serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+
+*/
+
+#h3-wrapper{
+	padding-top: 50px;
+	font-size: 43px;
+	font-weight: 650;
+	margin-bottom: 10px;
+	color: #ff7700;
+	font-family: "Inknut Antiqua", serif; 
 }
+
+.p-wrapper{
+	font-size: 19px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-weight: 650;
+	margin-bottom: 10px;
+	color: #000000;
+	font-family: "Exo 2", sans-serif;
+}
+
 
 :root {
 	--yellow: #ff7700;
@@ -19,8 +41,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
-	padding: 1rem;
+	min-height: 140vh;
+	padding: 90px;
+	padding-top: 100px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Exo 2", sans-serif;
 }
 
 .wrapper {
@@ -28,14 +55,9 @@
 	padding: 2rem;
 	max-width: 1176px;
 	width: 100%;
-	border-radius: .75rem;
+	border-radius: 3rem;
 	box-shadow: var(--shadow);
 	text-align: center;
-}
-.wrapper h3 {
-	font-size: 1.5rem;
-	font-weight: 600;
-	margin-bottom: 1rem;
 }
 .rating {
 	display: flex;
@@ -75,18 +97,20 @@
 }
 textarea {
 	width: 100%;
-	background: #ff7700;
+	background: #ffffff;
+	border: 4px solid rgba(0, 0, 0, 0.452);
 	padding: 1rem;
-	border-radius: .5rem;
-	border: none;
+	border-radius: 2rem;
 	outline: none;
 	resize: none;
+	color: rgb(0, 0, 0);
 	margin-bottom: .5rem;
 }
 .btn-group {
 	display: flex;
 	grid-gap: .5rem;
 	align-items: center;
+	margin: 20px;
 }
 .btn-group .btn {
 	padding: .75rem 1rem;
@@ -100,14 +124,19 @@ textarea {
 .btn-group .btn.submit {
 	background: var(--blue);
 	color: var(--white);
+	font-size: 18px;
+	font-family: "Exo 2", sans-serif;
 }
 .btn-group .btn.submit:hover {
-	background: var(--blue-d-1);
+	background: black;
 }
 .btn-group .btn.cancel {
 	background: var(--white);
+	font-family: "Exo 2", sans-serif;
+	font-size: 18px;
 	color: var(--blue);
 }
 .btn-group .btn.cancel:hover {
-	background: var(--light);
+	background: black;
+	color: #FFF;
 }
