@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FatCakeDetails from './fatcakedetails';
 import Tribe from './tribe';
 import SampDetails from './sampdetails';
+import MorogoDetails from './morogodetails';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<FatCakeDetails />} />
         <Route path="/tribe" element={<Tribe />} />
         <Route path="/sampdetails" element={<SampDetails />} />
+        <Route path="/morogodetails" element={<MorogoDetails />} />
        
       
       </Routes>
