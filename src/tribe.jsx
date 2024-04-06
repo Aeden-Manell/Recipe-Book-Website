@@ -65,10 +65,10 @@ const Tribe = () => {
     
       
       const reviews = [
-        { photo: "https://media.licdn.com/dms/image/D4D03AQFFSjhCp4Irkg/profile-displayphoto-shrink_800_800/0/1695803206756?e=2147483647&v=beta&t=IEDW82asB2-SAlwUaoRZFNjUfSriu7MbTaHoWwOwvxs", name: "Rethabile Mohapi", date: "3 days ago", stars: "★★★★☆", message: "Easy qick and nice love it" },
-        { photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYyikPIGNM3wrZYtuFqo6EKv-F43_GwMo4JACDAFnAw&s", name: "Aeden Manel", date: "3 weeks ago", stars: "★★★☆☆", message: "Quick and profound methods " },
-        { photo: "https://qph.cf2.quoracdn.net/main-thumb-95365177-200-bfdsjlwwtyodwczdbweikjhtorkkvmpp.jpeg", name: "Larreth Jimu", date: "1 Month ago", stars: "★★★★☆", message: "The Methods are easy to follow and quick " },
-        { photo: "https://www.larrethgroup.com/wp-content/uploads/2022/06/1-150x150.png", name: "Mnelisi ", date: "3 Months ago ", stars: "★★★★☆", message: "I was hungry and I had all the ingredients , I made voetkoek and mince " },
+        { photo: "https://media.licdn.com/dms/image/D4D03AQFFSjhCp4Irkg/profile-displayphoto-shrink_800_800/0/1695803206756?e=2147483647&v=beta&t=IEDW82asB2-SAlwUaoRZFNjUfSriu7MbTaHoWwOwvxs", name: "Tony Zees", date: "1 days ago", stars: "★★★★★", message: "Fragrant spices meld with tender tripe for a flavorful curry over rice." },
+        { photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYyikPIGNM3wrZYtuFqo6EKv-F43_GwMo4JACDAFnAw&s", name: "Chris Tina", date: "2 weeks ago", stars: "★★★☆☆", message: "Meltingly tender tripe with root vegetables in savory broth, nice recipe " },
+        { photo: "https://qph.cf2.quoracdn.net/main-thumb-95365177-200-bfdsjlwwtyodwczdbweikjhtorkkvmpp.jpeg", name: "Dimpho Leaf", date: "2 Month ago", stars: "★★★★☆", message: "soy-glazed tripe for vibrant textures, love the taste" },
+        { photo: "https://www.larrethgroup.com/wp-content/uploads/2022/06/1-150x150.png", name: "John Sky ", date: "3 Months ago ", stars: "★★★☆☆", message: " aromatic herbs., quick and easy " },
       ];
     
       
@@ -122,7 +122,7 @@ const Tribe = () => {
             <div className='headings'>
            DESCRIPTION
            </div>
-            <p className='descriptionsP'>Vetkoek is a traditional South African snack that can be made with both sweet or savoury fillings. <br></br>Bite through the crispy exterior of a freshly baked vetkoek into the soft goodness inside. <br></br>This is something every South African can identify with. This easy vetkoek recipe is simple to prepare and delicious.</p>
+            <p className='descriptionsP'>Tripe, also known as Mala Mogodu or Ulusu in some regions, <br></br>is a unique and flavorful dish that originates from various culinary traditions across the globe. <br></br> Tripe refers to the edible lining from the stomachs of various farm animals, typically cattle, sheep, or pigs.<br></br> It's renowned for its distinctive chewy texture and its ability to absorb flavors from spices and seasonings. <br></br>Bite through the crispy exterior of a freshly baked vetkoek into the soft goodness inside. <br></br>This is something every South African can identify with. This easy vetkoek Tribe is simple to prepare and delicious.</p>
            
             {/* <br></br> */}
         <div className='headings'> INGREDIENTS</div>
