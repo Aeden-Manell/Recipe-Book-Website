@@ -65,10 +65,10 @@ const SampDetails = () => {
     
       
       const reviews = [
-        { photo: "https://media.licdn.com/dms/image/D4D03AQFFSjhCp4Irkg/profile-displayphoto-shrink_800_800/0/1695803206756?e=2147483647&v=beta&t=IEDW82asB2-SAlwUaoRZFNjUfSriu7MbTaHoWwOwvxs", name: "Kitso Jack", date: "5 days ago", stars: "★★★★★", message: "Easy qick and nice love it" },
-        { photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYyikPIGNM3wrZYtuFqo6EKv-F43_GwMo4JACDAFnAw&s", name: "Sam Rocky", date: "2 weeks ago", stars: "★★★★★", message: "Quick and profound methods " },
-        { photo: "https://qph.cf2.quoracdn.net/main-thumb-95365177-200-bfdsjlwwtyodwczdbweikjhtorkkvmpp.jpeg", name: "Jayesh Seattle", date: "1 Month ago", stars: "★★★★★", message: "The Methods are easy to follow and quick " },
-        { photo: "https://www.larrethgroup.com/wp-content/uploads/2022/06/1-150x150.png", name: "Monde Sky  ", date: "3 Months ago ", stars: "★★★★★", message: "I was hungry and I had all the ingredients , I made voetkoek and mince " },
+        { photo: "https://media.licdn.com/dms/image/D4D03AQFFSjhCp4Irkg/profile-displayphoto-shrink_800_800/0/1695803206756?e=2147483647&v=beta&t=IEDW82asB2-SAlwUaoRZFNjUfSriu7MbTaHoWwOwvxs", name: "Kitso Jack", date: "5 days ago", stars: "★★★★★", message: "Easy to prepare, it's a go-to for chilly evenings." },
+        { photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYyikPIGNM3wrZYtuFqo6EKv-F43_GwMo4JACDAFnAw&s", name: "Sam Rocky", date: "2 weeks ago", stars: "★★★★★", message: "Velvety smooth and bursting with flavor, it elevates any pasta dish." },
+        { photo: "https://qph.cf2.quoracdn.net/main-thumb-95365177-200-bfdsjlwwtyodwczdbweikjhtorkkvmpp.jpeg", name: "Jayesh Seattle", date: "1 Month ago", stars: "★★★★★", message: " Silky and rich, they're a perfect accompaniment to any meal. " },
+        { photo: "https://www.larrethgroup.com/wp-content/uploads/2022/06/1-150x150.png", name: "Monde Sky  ", date: "3 Months ago ", stars: "★★★★★", message: "Creamy Stamp mashed potatoes offer a luxurious twist on a classic side " },
       ];
     
       
@@ -218,7 +218,7 @@ const SampDetails = () => {
                         <br></br>
                         <div className="image-container">
                             <img src={clock} alt='clock'  className='clock'/>
-                            <p>45 min</p>
+                            <p>35 min</p>
                             </div>
 
 
