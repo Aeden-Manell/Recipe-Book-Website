@@ -1,6 +1,6 @@
 // import React from 'react';
 import StarRating from './StarRating';
-import React, { useState ,useEffect} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import review1 from './images/IMG_7183.jpg';
 import fatcake1 from './images/IMG_7192.jpg';
@@ -217,6 +217,8 @@ const FatCakeDetails = () => {
                             <img src={clock} alt='clock'  className='clock'/>
                             <p>45 min</p>
                             </div>
+
+
 
 
 
