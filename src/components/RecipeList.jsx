@@ -1,4 +1,13 @@
 import "./styles/list-style.css"
+import clockicon from "../assets/icon8.png";
+import { Link } from "react-router-dom";
+
+import IMG1 from "../assets/IMG1.jpg";
+import IMG2 from "../assets/IMG2.jpg";
+import IMG3 from "../assets/IMG3.jpg";
+import IMG4 from "../assets/IMG4.jpg";
+import IMG5 from "../assets/IMG5.jpg";
+import IMG6 from "../assets/IMG6.jpg";
 
 const RecipeList = () => {
     return ( 
@@ -6,103 +15,106 @@ const RecipeList = () => {
    <ul class="cards">
   <li>
     <a href="" class="card">
-      <img src="https://www.paarman.co.za/wp-content/uploads/2020/08/prawn-curry.png" class="card__image" alt="" />
+      <img src={IMG1} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+          <img class="card__thumb" src={clockicon} alt="" />
           <div class="card__header-text">
-            <h3 class="card__title">Jessica Parker</h3>            
-            <span class="card__status">1 hour ago</span>
+            <h3 class="cardtitle">Chicken Feet Recipe</h3>            
+            <span class="cardstatus">Duration: 50 Min</span><br></br>
+            <span class="cardstatus">Servings: 4-5</span>
           </div>
         </div>
-        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+        <Link to="/" class="cardbtn">View Recipe</Link>
       </div>
     </a>      
   </li>
   <li>
     <a href="" class="card">
-      <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-      <div class="card__overlay">        
-        <div class="card__header">
-          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-          <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-          <div class="card__header-text">
-            <h3 class="card__title">kim Cattrall</h3>
-            <span class="card__status">3 hours ago</span>
-          </div>
-        </div>
-        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-      </div>
-    </a>
-  </li>
-  <li>
-    <a href="" class="card">
-      <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+      <img src={IMG2} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+          <img class="card__thumb" src={clockicon} alt="" />
           <div class="card__header-text">
-            <h3 class="card__title">Jessica Parker</h3>
-            <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>            
-            <span class="card__status">1 hour ago</span>
+            <h3 class="cardtitle">Tripe (Mala Mogodu/Ulusu) Recipe</h3>            
+            <span class="cardstatus">Duration: 2 Hours</span><br></br>
+            <span class="cardstatus">Servings: 4-6</span>
           </div>
         </div>
-        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+        <Link to="/" class="cardbtn">View Recipe</Link>
       </div>
-    </a>
+    </a>      
   </li>
   <li>
     <a href="" class="card">
-      <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+      <img src={IMG3} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+          <img class="card__thumb" src={clockicon} alt="" />
           <div class="card__header-text">
-            <h3 class="card__title">Jessica Parker</h3>
-            <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>            
-            <span class="card__status">1 hour ago</span>
+            <h3 class="cardtitle">SKOPO (Cow Head) Recipe</h3>            
+            <span class="cardstatus">Duration: 40 Min</span><br></br>
+            <span class="cardstatus">Servings: 4-6</span>
           </div>
         </div>
-        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+        <Link to="/" class="cardbtn">View Recipe</Link>
       </div>
-    </a>
+    </a>      
   </li>
   <li>
     <a href="" class="card">
-      <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+      <img src={IMG4} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+          <img class="card__thumb" src={clockicon} alt="" />
           <div class="card__header-text">
-            <h3 class="card__title">Jessica Parker</h3>
-            <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>            
-            <span class="card__status">1 hour ago</span>
+            <h3 class="cardtitle">Morogo Recipe</h3>            
+            <span class="cardstatus">Duration: 1 Hour</span><br></br>
+            <span class="cardstatus">Servings: 4-6</span>
           </div>
         </div>
-        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+        <Link to="/" class="cardbtn">View Recipe</Link>
       </div>
-    </a>
+    </a>      
   </li>
   <li>
     <a href="" class="card">
-      <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
+      <img src={IMG5} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
-          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-          <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+          <img class="card__thumb" src={clockicon} alt="" />
           <div class="card__header-text">
-            <h3 class="card__title">kim Cattrall</h3>
-            <span class="card__status">3 hours ago</span>
-          </div>          
+            <h3 class="cardtitle">Creamy Samp & Beans Recipe</h3>            
+            <span class="cardstatus">Duration: 40 Min</span><br></br>
+            <span class="cardstatus">Servings: 7-8</span>
+          </div>
         </div>
-        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+        <Link to="/" class="cardbtn">View Recipe</Link>
       </div>
-    </a>
-  </li>    
+    </a>      
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src={IMG6} class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+          <img class="card__thumb" src={clockicon} alt="" />
+          <div class="card__header-text">
+            <h3 class="cardtitle">Vetkoek Recipe</h3>            
+            <span class="cardstatus">Duration: 40 Min</span><br></br>
+            <span class="cardstatus">Servings: 5-6</span>
+          </div>
+        </div>
+        <Link to="/" class="cardbtn">View Recipe</Link>
+      </div>
+    </a>      
+  </li>   
 </ul>
         </div>
      );

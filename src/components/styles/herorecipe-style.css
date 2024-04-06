@@ -10,10 +10,10 @@
 */
 
 #heroRecipe{
-    margin: 3px;
-    margin-right: 7px;
-    margin-left: 7px;
-    border-radius: 30px;
+    margin: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 45px;
     padding: 80px;
     background-color: rgb(255, 255, 255);
 }
@@ -39,6 +39,8 @@
 #h1-recipe{
     font-family: "Inknut Antiqua", serif;
     color: black;
+    font-size: 50px;
+    font-weight: 800;
 }
 
 #h6-recipe{
