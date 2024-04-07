@@ -9,6 +9,8 @@ import Tribe from './tribe';
 import SampDetails from './sampdetails';
 import MorogoDetails from './morogodetails';
 import ChickenFeetDetails from './chickenfeetdetails';
+import SkopoCowHeadDetails from './skopocowheaddetails';
+
 
 
 
@@ -23,6 +25,8 @@ function App() {
         <Route path="/sampdetails" element={<SampDetails />} />
         <Route path="/morogodetails" element={<MorogoDetails />} />
         <Route path="/chickenfeetdetails" element={<ChickenFeetDetails />} />
+        <Route path="/skopocowheaddetails" element={<SkopoCowHeadDetails />} />
+      
        
       
       </Routes>

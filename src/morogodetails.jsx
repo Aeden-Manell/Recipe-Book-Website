@@ -105,7 +105,7 @@ const MorogoDetails = () => {
       </nav>
     </div>
 
-            <div className="product-title">Creamy Samp</div>   
+            <div className="product-title"> Morogo</div>   
             
             <div className='stars'>
                 <StarRating rating={5} />
