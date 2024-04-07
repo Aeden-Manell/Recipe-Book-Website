@@ -9,11 +9,11 @@ background-color:#000000;
 color: rgb(255, 255, 255) !important;
 
 
-/* Nav */
+
 }
 
 
-/* CSS RESET */
+
 Navigation{
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
@@ -33,7 +33,6 @@ button,
   font-family: inherit;
 }
 
-/* CSS RESET ENDS */
 
 /* NAVIGATION BAR */
 
