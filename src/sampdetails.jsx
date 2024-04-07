@@ -11,7 +11,7 @@ import samp4 from './images/IMG_7208.jpg';
 import samp5 from './images/IMG_7209.jpg';
 import review0 from './images/IMG_7195.jpg';
 import review2 from './images/IMG_7199.jpg';
-import review3 from './images/IMG_7215.jpg';
+import review3 from './images/IMG_7222.jpg';
 import clock from './images/orange-alarm.jpg';
 
 
@@ -77,7 +77,7 @@ const SampDetails = () => {
         {image: review0, name: 'Fatcake', stars:4 ,viewers: 90, heart: false },    
         { image: review1, name: 'Chicken Feet', stars: 3, viewers: 1500, heart: false },
         { image: review2, name: 'Tribe', stars: 5, viewers: 180, heart: <i className="fas fa-heart"></i> },
-        { image: review3, name: 'Morogo(spinach)', stars: 4, viewers: 120, heart: <i className="fas fa-heart"></i> },
+        { image: review3, name: 'Skopo(CowHead)', stars: 4, viewers: 120, heart: <i className="fas fa-heart"></i>,link: <Link to="/skopocowheaddetails"><img src={review2} alt='skopocowheaddetails' /></Link> },
        
       ]);
     
@@ -198,8 +198,10 @@ const SampDetails = () => {
                 {relatedRecipes.map((recipe, index) => (
                     <div key={index} className="recipe">
                     <div className="recipe-name">{recipe.name}</div>
-
+                <Link to="/skopocowheaddetails">
                     <img src={recipe.image} alt={recipe.name} className="recipe-image" />
+                    </Link>
+
                     <div className="recipe-info">
                         <i className={`fas fa-heart ${recipe.heart ? 'red' : ''}`} onClick={() => toggleHeartColor(index)} />
                         <div className='starsreview'><StarRating rating={recipe.stars} /></div>

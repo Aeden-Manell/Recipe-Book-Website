@@ -74,9 +74,9 @@ const FatCakeDetails = () => {
     
       
       const [relatedRecipes, setRelatedRecipes] = useState([
-        {image: fatcake6, name: 'Mince Meat', stars:4 ,viewers: 100, heart: false  , link: <Link to="/"><img src={fatcake6} alt='Mincemeat' /></Link> },    
-        { image: review1, name: 'Chicken Feet', stars: 3, viewers: 200, heart: false  , link: <Link to="/chickenfeetdetails"><img src={review1} alt='Chickenfeet' /></Link> },
-        { image: review2, name: 'Creamy Stamp', stars: 5, viewers: 150, heart: <i className="fas fa-heart"></i>  , link: <Link to="/sampdetails"><img src={review2} alt='Creamy Stamp' /></Link>  },
+        {image: fatcake6, name: 'Mince Meat', stars:4 ,viewers: 100, heart: false  },    
+        { image: review1, name: 'Chicken Feet', stars: 3, viewers: 200, heart: false },
+        { image: review2, name: 'Creamy Stamp', stars: 5, viewers: 150, heart: <i className="fas fa-heart"></i>  },
         { image: review3, name: 'Morogo(spinach', stars: 4, viewers: 120, heart: <i className="fas fa-heart"></i> , link: <Link to="/morogodetails"><img src={review3} alt='Morogo(spinach' /></Link>
       },
      
@@ -197,12 +197,10 @@ const FatCakeDetails = () => {
                     <div key={index} className="recipe">
 
                     <div className="recipe-name">{recipe.name}</div>
-
+                    
                     <Link to="/morogodetails">
                     <img src={recipe.image} alt={recipe.name} className="recipe-image" />
                     </Link>
-                    
-
 
                     <div className="recipe-info">
                         <i className={`fas fa-heart ${recipe.heart ? 'red' : ''}`} onClick={() => toggleHeartColor(index)} />

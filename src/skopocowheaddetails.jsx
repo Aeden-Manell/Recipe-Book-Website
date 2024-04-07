@@ -75,7 +75,7 @@ const SkopoCowHeadDetails = () => {
       
       const [relatedRecipes, setRelatedRecipes] = useState([
         {image: review0, name: 'Mogodu', stars:4 ,viewers: 200, heart: <i className="fas fa-heart"></i> },    
-        { image: review1, name: 'Voekoek', stars: 4, viewers: 500, heart: <i className="fas fa-heart"></i> },
+        { image: review1, name: 'Voekoek', stars: 4, viewers: 500, heart: <i className="fas fa-heart"></i>,link: <Link to="/fatcakedetails"><img src={review2} alt='fatcakedetails' /></Link> },
         { image: review2, name: 'Chicken Feet', stars: 5, viewers: 450, heart: <i className="fas fa-heart"></i> },
         { image: review3, name: 'Morogo(spinach', stars: 5, viewers: 170, heart: <i className="fas fa-heart"></i> },
        
@@ -211,7 +211,9 @@ const SkopoCowHeadDetails = () => {
                     <div key={index} className="recipe">
                     <div className="recipe-name">{recipe.name}</div>
 
+                  <Link to="/fatcakedetails">
                     <img src={recipe.image} alt={recipe.name} className="recipe-image" />
+                    </Link>
                     <div className="recipe-info">
                         <i className={`fas fa-heart ${recipe.heart ? 'red' : ''}`} onClick={() => toggleHeartColor(index)} />
                         <div className='starsreview'><StarRating rating={recipe.stars} /></div>

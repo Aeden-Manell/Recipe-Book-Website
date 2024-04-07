@@ -76,7 +76,7 @@ const ChickenFeetDetails = () => {
       const [relatedRecipes, setRelatedRecipes] = useState([
         {image: review0, name: 'Mogodu', stars:4 ,viewers: 200, heart: <i className="fas fa-heart"></i> },    
         { image: review1, name: 'Skopo', stars: 3, viewers: 500, heart: <i className="fas fa-heart"></i> },
-        { image: review2, name: 'Creamy Stamp', stars: 5, viewers: 150, heart: <i className="fas fa-heart"></i> },
+        { image: review2, name: 'Creamy Stamp', stars: 5, viewers: 150, heart: <i className="fas fa-heart"></i>,link: <Link to="/sampdetails"><img src={review2} alt='sampdetails' /></Link> },
         { image: review3, name: 'Morogo(spinach', stars: 4, viewers: 120, heart: <i className="fas fa-heart"></i> },
        
       ]);
@@ -208,8 +208,11 @@ const ChickenFeetDetails = () => {
                 {relatedRecipes.map((recipe, index) => (
                     <div key={index} className="recipe">
                     <div className="recipe-name">{recipe.name}</div>
-
+                    
+                    <Link to="/sampdetails">
                     <img src={recipe.image} alt={recipe.name} className="recipe-image" />
+                    </Link>
+
                     <div className="recipe-info">
                         <i className={`fas fa-heart ${recipe.heart ? 'red' : ''}`} onClick={() => toggleHeartColor(index)} />
                         <div className='starsreview'><StarRating rating={recipe.stars} /></div>

@@ -76,7 +76,7 @@ const MorogoDetails = () => {
       const [relatedRecipes, setRelatedRecipes] = useState([
         {image: review0, name: 'Fatcake', stars:4 ,viewers: 90, heart: false },    
         { image: review1, name: 'Chicken Feet', stars: 3, viewers: 1500, heart: false },
-        { image: review2, name: 'Tribe', stars: 5, viewers: 180, heart: <i className="fas fa-heart"></i> },
+        { image: review2, name: 'Tribe', stars: 5, viewers: 180, heart: <i className="fas fa-heart"></i>, link: <Link to="/tribe"><img src={review2} alt='tribe' /></Link> },
         { image: review3, name: 'Skopo', stars: 5, viewers: 300, heart: <i className="fas fa-heart"></i> },
        
       ]);
@@ -198,7 +198,10 @@ const MorogoDetails = () => {
                     <div key={index} className="recipe">
                     <div className="recipe-name">{recipe.name}</div>
 
+                    <Link to="/tribe">
                     <img src={recipe.image} alt={recipe.name} className="recipe-image" />
+                    </Link>
+
                     <div className="recipe-info">
                         <i className={`fas fa-heart ${recipe.heart ? 'red' : ''}`} onClick={() => toggleHeartColor(index)} />
                         <div className='starsreview'><StarRating rating={recipe.stars} /></div>

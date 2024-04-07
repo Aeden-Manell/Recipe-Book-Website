@@ -75,7 +75,7 @@ const Tribe = () => {
       
       const [relatedRecipes, setRelatedRecipes] = useState([
         {image: fatcake6, name: 'Mince Meat', stars:4 ,viewers: 100, heart: false },    
-        { image: review1, name: 'Chicken Feet', stars: 3, viewers: 200, heart: false },
+        { image: review1, name: 'Chicken Feet', stars: 3, viewers: 200, heart: false ,link: <Link to="/chickenfeetdetails"><img src={review1} alt='chickenfeetdetails' /></Link>},
         { image: review2, name: 'Creamy Stamp', stars: 5, viewers: 150, heart: <i className="fas fa-heart"></i> },
         { image: review3, name: 'Morogo(spinach', stars: 4, viewers: 120, heart: <i className="fas fa-heart"></i> },
        
@@ -220,8 +220,9 @@ const Tribe = () => {
                 {relatedRecipes.map((recipe, index) => (
                     <div key={index} className="recipe">
                     <div className="recipe-name">{recipe.name}</div>
-
+                <Link to="/chickenfeetdetails">
                     <img src={recipe.image} alt={recipe.name} className="recipe-image" />
+              </Link>
                     <div className="recipe-info">
                         <i className={`fas fa-heart ${recipe.heart ? 'red' : ''}`} onClick={() => toggleHeartColor(index)} />
                         <div className='starsreview'><StarRating rating={recipe.stars} /></div>
