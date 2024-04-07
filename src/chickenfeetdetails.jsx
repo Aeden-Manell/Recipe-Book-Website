@@ -2,13 +2,13 @@
 import StarRating from './StarRating';
 import React, { useState } from 'react';
 import './App.css';
-import review1 from './images/IMG_7183.jpg';
-import tribe1 from './images/IMG_7198.jpg';
-import tribe2 from './images/IMG_7199.jpg';
-import tribe3 from './images/IMG_7200.jpg';
-import tribe4 from './images/IMG_7201.jpg';
-import tribe5 from './images/IMG_7203.jpg';
-import fatcake6 from './images/IMG_7197.jpg';
+import review1 from './images/IMG_7222.jpg';
+import chick1 from './images/IMG_7187.jpg';
+import chick2 from './images/IMG_7183.jpg';
+import chick3 from './images/IMG_7185.jpg';
+import chick4 from './images/IMG_7210.jpg';
+import chick5 from './images/IMG_7188.jpg';
+import review0 from './images/IMG_7201.jpg';
 import review2 from './images/IMG_7205.jpg';
 import review3 from './images/IMG_7215.jpg';
 import clock from './images/orange-alarm.jpg';
@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 
 
 
-const Tribe = () => {
+const ChickenFeetDetails = () => {
     
 
     const [isHeartRed, setHeartRed] = useState(false);
@@ -66,16 +66,16 @@ const Tribe = () => {
     
       
       const reviews = [
-        { photo: "https://media.licdn.com/dms/image/D4D03AQFFSjhCp4Irkg/profile-displayphoto-shrink_800_800/0/1695803206756?e=2147483647&v=beta&t=IEDW82asB2-SAlwUaoRZFNjUfSriu7MbTaHoWwOwvxs", name: "Tony Zees", date: "1 days ago", stars: "★★★★★", message: "Fragrant spices meld with tender tripe for a flavorful curry over rice." },
-        { photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYyikPIGNM3wrZYtuFqo6EKv-F43_GwMo4JACDAFnAw&s", name: "Chris Tina", date: "2 weeks ago", stars: "★★★☆☆", message: "Meltingly tender tripe with root vegetables in savory broth, nice recipe " },
-        { photo: "https://qph.cf2.quoracdn.net/main-thumb-95365177-200-bfdsjlwwtyodwczdbweikjhtorkkvmpp.jpeg", name: "Dimpho Leaf", date: "2 Month ago", stars: "★★★★☆", message: "soy-glazed tripe for vibrant textures, love the taste" },
-        { photo: "https://www.larrethgroup.com/wp-content/uploads/2022/06/1-150x150.png", name: "John Sky ", date: "3 Months ago ", stars: "★★★☆☆", message: " aromatic herbs., quick and easy " },
+        { photo: "https://media.licdn.com/dms/image/D4D03AQFFSjhCp4Irkg/profile-displayphoto-shrink_800_800/0/1695803206756?e=2147483647&v=beta&t=IEDW82asB2-SAlwUaoRZFNjUfSriu7MbTaHoWwOwvxs", name: "Malebogo Kue", date: "1 days ago", stars: "★★★★★", message: "Tender chicken feet simmered in a fiery chili sauce, offering a flavorful kick with each bite., really enjoyed" },
+        { photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYyikPIGNM3wrZYtuFqo6EKv-F43_GwMo4JACDAFnAw&s", name: "Sabata Tina", date: "2 weeks ago", stars: "★★★☆☆", message: "Crisp and golden, these fried chicken feet boast a satisfying crunch with succulent meat inside." },
+        { photo: "https://qph.cf2.quoracdn.net/main-thumb-95365177-200-bfdsjlwwtyodwczdbweikjhtorkkvmpp.jpeg", name: "Mercia Leaf", date: "2 Month ago", stars: "★★★★☆", message: "A comforting broth filled with tender chicken feet, infused with aromatic ginger and fragrant herbs" },
+        { photo: "https://www.larrethgroup.com/wp-content/uploads/2022/06/1-150x150.png", name: "Hazel Wizzy ", date: "3 Months ago ", stars: "★★★☆☆", message: " Served cold, these marinated chicken feet are a tangy and savory delight, perfect for appetizers or snacks, try it  " },
       ];
     
       
       const [relatedRecipes, setRelatedRecipes] = useState([
-        {image: fatcake6, name: 'Mince Meat', stars:4 ,viewers: 100, heart: false },    
-        { image: review1, name: 'Chicken Feet', stars: 3, viewers: 200, heart: false },
+        {image: review0, name: 'Mogodu', stars:4 ,viewers: 200, heart: <i className="fas fa-heart"></i> },    
+        { image: review1, name: 'Skopo', stars: 3, viewers: 500, heart: <i className="fas fa-heart"></i> },
         { image: review2, name: 'Creamy Stamp', stars: 5, viewers: 150, heart: <i className="fas fa-heart"></i> },
         { image: review3, name: 'Morogo(spinach', stars: 4, viewers: 120, heart: <i className="fas fa-heart"></i> },
        
@@ -84,18 +84,7 @@ const Tribe = () => {
   return (
     <div className='body'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-{/* 
-      <div className="navbar">
-        <div className="navbar-logo">
-          <a href="#logo">Logo</a>
-        </div>
-        <div className="navbar-links">
-          <a href="#home">Home</a>
-          <a href="#story">Our Story</a>
-          <a href="#testimony">Testimonials</a>
-          <a href="#contact">Contact Us</a>
-        </div>
-      </div> */}
+
 
 <div className="Navigation">
       <nav class="flex align-center">
@@ -116,11 +105,11 @@ const Tribe = () => {
       </nav>
     </div>
 
-            <div className="product-title">Tripe (Mala mogodu/ ulusu)</div>   
+            <div className="product-title">Chicken Feet</div>   
             
             <div className='stars'>
                 <StarRating rating={4} />
-                <p> 4 (99 reviews)</p>
+                <p> 5 (156 reviews)</p>
                 </div>   
                        
     <div className='icons'>
@@ -131,33 +120,34 @@ const Tribe = () => {
       </div>
 
       <div className='image-grid'>
-                <img src={tribe1} alt='big' className='big-image' />
-            <img src={tribe2} alt='small-1' className='small-image' />
-            <img src={tribe3} alt='small-2' className='small-image' />
-            <img src={tribe5} alt='small-3' className='small-image' />
-            <img src={tribe4} alt='small-4' className='small-image' />
+                <img src={chick1} alt='big' className='big-image' />
+            <img src={chick2} alt='small-1' className='small-image' />
+            <img src={chick3} alt='small-2' className='small-image' />
+            <img src={chick4} alt='small-3' className='small-image' />
+            <img src={chick5} alt='small-4' className='small-image' />
             </div>
             <br></br>
             <div className='headings'>
            DESCRIPTION
            </div>
-            <p className='descriptionsP'>Tripe, also known as Mala Mogodu or Ulusu in some regions, <br></br>is a unique and flavorful dish that originates from various culinary traditions across the globe. <br></br> Tripe refers to the edible lining from the stomachs of various farm animals, typically cattle, sheep, or pigs.<br></br> It's renowned for its distinctive chewy texture and its ability to absorb flavors from spices and seasonings. <br></br>Bite through the crispy exterior of a freshly baked vetkoek into the soft goodness inside. <br></br>This is something every South African can identify with. This easy vetkoek Tribe is simple to prepare and delicious.</p>
+            <p className='descriptionsP'>Chicken feet, a popular delicacy in many Asian and African cultures, are more than just a novelty;?<br></br> they are an explosion of textures and flavours that will surprise and delight your senses. Get ready <br></br> to elevate your dining experience with a dish that might sound unusual at first, but will <br></br>undoubtedly leave you craving for more – this delightful chicken feet recipe!
+
+</p>
            
             {/* <br></br> */}
         <div className='headings'> INGREDIENTS</div>
         <br></br>
             <ul class="ingredients-list">
-            <li><i class="fas fa-check-double"></i> 1 kg tripe,coarse salt, for sprinkling and soaking</li>
-            <li><i class="fas fa-check-double"></i> 4 litres, watersalt and pepper, to taste</li>
-            <li><i class="fas fa-check-double"></i>4 T ghee or vegetable oil</li>
-            <li><i class="fas fa-check-double"></i> 1 medium onion, roughly chopped</li>
-            <li><i class="fas fa-check-double"></i> 1 large red chilli, finely chopped</li>
-            <li><i class="fas fa-check-double"></i> 1 t garlic, crushed</li>
-            <li><i class="fas fa-check-double"></i> 2 t garam masala</li>
-            <li><i class="fas fa-check-double"></i> 1 t paprika</li>
+            <li><i class="fas fa-check-double"></i> 500 g Chicken feet cleaned</li>
+            <li><i class="fas fa-check-double"></i> 1 tablespoon turmeric</li>
+            <li><i class="fas fa-check-double"></i>2 tablespoon paprikal</li>
+            <li><i class="fas fa-check-double"></i> 1 tablespoon crushed garlic</li>
+            <li><i class="fas fa-check-double"></i> 1 tablespoon Worcestershire sauce</li>
+            <li><i class="fas fa-check-double"></i> 1 tablespoon tomato paste</li>
+            <li><i class="fas fa-check-double"></i> 1 tablespoon all in one curry powder with garlic</li>
+            <li><i class="fas fa-check-double"></i> ½ chopped onion</li>
             <li><i class="fas fa-check-double"></i> 2 bay leaves</li>
-            <li><i class="fas fa-check-double"></i> 1 x 400 g can chopped tomatoes</li>
-            <li><i class="fas fa-check-double"></i> 2 t parsley, chopped, to garnishd</li>
+            <li><i class="fas fa-check-double"></i> Optional: sugar to taste</li>
           
 
             </ul>
@@ -167,18 +157,16 @@ const Tribe = () => {
             <div className='headings'> METHODS </div>
             <br></br>
             <ol class="step-list" ref={stepListRef}>
-            <li class="step">Step 1: Place the tripe in a large bowl.</li>
-            <li class="step">Step 2: Sprinkle coarse salt all over the tripe and add half the water.</li>
-            <li class="step">Step 3: Soak for about an hour, then rinse thoroughly under cold, running water.</li>
-            <li class="step">Step 4: Cut the tripe into bite-sized pieces and place in a large saucepan with a lid. Season with salt and pepper and add the remaining water.</li>
-            <li class="step">Step 5: Slowly bring it to a boil over a low heat and cook for 3 hours or until tender. Drain and set aside.</li>
-            <li class="step">Step 6: Heat the ghee or oil in a large pan or skillet.</li>
-            <li class="step">Step 7: Stir in the onion, chilli and garlic.</li>
-            <li class="step">Step 8:  Add the masala, paprika and bay leaves. Season with salt and pepper, and stir through while cooking over low heat until the onion is cooked.</li>
-            <li class="step">Step 9: Add the tomatoes, stir through, and cook for 2 minutes.</li>
-            <li class="step">Step 10:  Add the amasi or yoghurt and stir through.The sauce should be thick by now, if not, cook over low heat until reduced.</li>
-            <li class="step">Step 11:  Add the tripe and cook for about 10 minutes in the sauce.</li>
-            <li class="step">Step 12: Garnish with fresh parsley and serve with a starch of your choice.</li>
+            <li class="step">Step 1: After rinsing and cleaning the chicken feet, add the chicken feet into a pan and add a little water.</li>
+            <li class="step">Step 2: Season with pink Himalayan salt and add the turmeric. Let the chicken feet simmer for 30 minutes with the lid on.</li>
+            <li class="step">Step 3: After 30 minutes remove the chicken feet from the pan.</li>
+            <li class="step">Step 4: In the same pan, add a little oil, allow to heat and add 1 tablespoon all in one curry powder with garlic and let it roast for about 1-2 minutes.</li>
+            <li class="step">Step 5: Add ½ chopped red onion and sauté until translucent. Once fully cooked, add the cooked chicken feet back into the pan</li>
+            <li class="step">Step 6:Add 1 tablespoon crushed garlic/garlic powder.</li>
+            <li class="step">Step 7: Add 2 tablespoon paprika. and Add 1 tablespoon Worcestershire sauce.</li>
+            <li class="step">Step 8:  Add some dry/fresh thyme. and Add some water into the pan again and mix. </li>
+            <li class="step">Step 9: Add 1 tablespoon tomato paste.</li>
+            <li class="step">Step 10:  Allow to simmer for 15 minutes with the lid on.</li>
             </ol>
             <br></br>
             <br></br>
@@ -191,7 +179,7 @@ const Tribe = () => {
             <hr className="hr" />
             <br></br>
             <div className='headings'> REVIEWS  </div>  
-            <div className='starsrev'>★ (99 review) </div> 
+            <div className='starsrev'>★ (156 review) </div> 
             {/* <div>see more </div> */}
             <br></br>
             <br></br>
@@ -285,4 +273,4 @@ const Tribe = () => {
   );
 }
 
-export default Tribe;
+export default ChickenFeetDetails ;

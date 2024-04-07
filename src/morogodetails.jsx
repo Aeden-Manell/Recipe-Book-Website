@@ -2,6 +2,7 @@
 import StarRating from './StarRating';
 import React, { useState } from 'react';
 import './App.css';
+import { Link } from "react-router-dom";
 import review1 from './images/IMG_7183.jpg';
 import morogo1 from './images/IMG_7212.jpg';
 import morogo2 from './images/IMG_7213.jpg';
@@ -84,18 +85,25 @@ const MorogoDetails = () => {
     <div className='body'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-      <div className="navbar">
-        <div className="navbar-logo">
-          <a href="#logo">Logo</a>
-        </div>
-        <div className="navbar-links">
-          <a href="#home">Home</a>
-          <a href="#story">Our Story</a>
-          <a href="#testimony">Testimonials</a>
-          <a href="#contact">Contact Us</a>
-          {/* <input type="text" placeholder="Search" className="navbar-search"/> */}
-        </div>
-      </div>
+   
+    <div className="Navigation">
+      <nav class="flex align-center">
+        <div><img src={"https://github.com/Aeden-Manell/Recipe-Book-Website/blob/main/src/assets/Logo.jpeg?raw=true"} alt="Logo" className="logo" /></div>
+        <ul>
+          <li class="big-screens">
+
+            <Link to="/">Home</Link>
+            <Link to="/ourstory">Our Story</Link>
+            <Link to="/ourrecipes">Our Recipes</Link>
+            <Link to="/reviews">Reviews</Link>
+            <Link to="/contact" id="contact-btn">Contact</Link>
+          </li>
+          <li class="small-screens">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
             <div className="product-title">Creamy Samp</div>   
             

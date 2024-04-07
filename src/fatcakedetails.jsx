@@ -2,6 +2,7 @@
 import StarRating from './StarRating';
 import React, { useState } from 'react';
 import './App.css';
+import { Link } from "react-router-dom";
 import review1 from './images/IMG_7183.jpg';
 import fatcake1 from './images/IMG_7192.jpg';
 import fatcake2 from './images/IMG_7193.jpg';
@@ -73,10 +74,12 @@ const FatCakeDetails = () => {
     
       
       const [relatedRecipes, setRelatedRecipes] = useState([
-        {image: fatcake6, name: 'Mince Meat', stars:4 ,viewers: 100, heart: false },    
-        { image: review1, name: 'Chicken Feet', stars: 3, viewers: 200, heart: false },
-        { image: review2, name: 'Creamy Stamp', stars: 5, viewers: 150, heart: <i className="fas fa-heart"></i> },
-        { image: review3, name: 'Morogo(spinach', stars: 4, viewers: 120, heart: <i className="fas fa-heart"></i> },
+        {image: fatcake6, name: 'Mince Meat', stars:4 ,viewers: 100, heart: false  , link: <Link to="/"><img src={fatcake6} alt='Mincemeat' /></Link> },    
+        { image: review1, name: 'Chicken Feet', stars: 3, viewers: 200, heart: false  , link: <Link to="/chickenfeetdetails"><img src={review1} alt='Chickenfeet' /></Link> },
+        { image: review2, name: 'Creamy Stamp', stars: 5, viewers: 150, heart: <i className="fas fa-heart"></i>  , link: <Link to="/sampdetails"><img src={review2} alt='Creamy Stamp' /></Link>  },
+        { image: review3, name: 'Morogo(spinach', stars: 4, viewers: 120, heart: <i className="fas fa-heart"></i> , link: <Link to="/morogodetails"><img src={review3} alt='Morogo(spinach' /></Link>
+      },
+     
        
       ]);
     
@@ -84,18 +87,24 @@ const FatCakeDetails = () => {
     <div className='body'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-      <div className="navbar">
-        <div className="navbar-logo">
-          <a href="#logo">Logo</a>
-        </div>
-        <div className="navbar-links">
-          <a href="#home">Home</a>
-          <a href="#story">Our Story</a>
-          <a href="#testimony">Testimonials</a>
-          <a href="#contact">Contact Us</a>
-          {/* <input type="text" placeholder="Search" className="navbar-search"/> */}
-        </div>
-      </div>
+    <div className="Navigation">
+      <nav class="flex align-center">
+        <div><img src={"https://github.com/Aeden-Manell/Recipe-Book-Website/blob/main/src/assets/Logo.jpeg?raw=true"} alt="Logo" className="logo" /></div>
+        <ul>
+          <li class="big-screens">
+
+            <Link to="/">Home</Link>
+            <Link to="/ourstory">Our Story</Link>
+            <Link to="/ourrecipes">Our Recipes</Link>
+            <Link to="/reviews">Reviews</Link>
+            <Link to="/contact" id="contact-btn">Contact</Link>
+          </li>
+          <li class="small-screens">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
             <div className="product-title">Easy vetkoek – South African goodness at its best</div>   
             
@@ -186,9 +195,15 @@ const FatCakeDetails = () => {
                     <div className="related-recipes">
                 {relatedRecipes.map((recipe, index) => (
                     <div key={index} className="recipe">
+
                     <div className="recipe-name">{recipe.name}</div>
 
+                    <Link to="/morogodetails">
                     <img src={recipe.image} alt={recipe.name} className="recipe-image" />
+                    </Link>
+                    
+
+
                     <div className="recipe-info">
                         <i className={`fas fa-heart ${recipe.heart ? 'red' : ''}`} onClick={() => toggleHeartColor(index)} />
                         <div className='starsreview'><StarRating rating={recipe.stars} /></div>

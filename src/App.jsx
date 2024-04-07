@@ -8,6 +8,7 @@ import FatCakeDetails from './fatcakedetails';
 import Tribe from './tribe';
 import SampDetails from './sampdetails';
 import MorogoDetails from './morogodetails';
+import ChickenFeetDetails from './chickenfeetdetails';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/tribe" element={<Tribe />} />
         <Route path="/sampdetails" element={<SampDetails />} />
         <Route path="/morogodetails" element={<MorogoDetails />} />
+        <Route path="/chickenfeetdetails" element={<ChickenFeetDetails />} />
        
       
       </Routes>
