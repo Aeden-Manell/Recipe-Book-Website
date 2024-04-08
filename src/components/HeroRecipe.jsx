@@ -10,7 +10,6 @@ const HeroRecipe = () => {
                         <div>
                             <p class=" mb-4" id="h4">Mama's Traditional Mzansi Cuisine</p>
                             <h2  id="h1-recipe">Come & explore african traditional delicious recipes</h2>
-                            <p class="mt-8 text-base text-gray-500 leading-relaxed" id="h6-recipe">Welcome to Mama's Traditional Mzansi Cuisine, your culinary destination for authentic and delectable South African recipes.</p>
                             <div class="bg-white mt-12 flex px-1 py-1.5 rounded-full shadow-[0_5px_16px_-8px_black] overflow-hidden">
                                 <input type='email' placeholder='Search for a recipe' class="w-full font-bold outline-none bg-white pl-4 text-sm" />
                                 <button type='button'
