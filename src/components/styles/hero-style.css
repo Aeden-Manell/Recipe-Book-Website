@@ -2,6 +2,8 @@
 
 #hero-Text{
     background-color: #f07000;
+    border-right: #ffffff 8px solid;
+    border-bottom: #ffffff 8px solid;
     border-radius: 25px;
     margin-left: 50px;
     margin-right: 330px;

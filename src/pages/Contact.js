@@ -1,17 +1,19 @@
-import ContactUs from "../components/ContactUs";
-import Navbar from "../components/Navbar";
-import HeroContact from "../components/HeroContact";
-import Footer from "../components/Footer";
+import ContactUs from "../components/ContactUs"; // Import the ContactUs component
+import Navbar from "../components/Navbar"; // Import the Navbar component
+import HeroContact from "../components/HeroContact"; // Import the HeroContact component
+import Footer from "../components/Footer"; // Import the Footer component
 
 const Contact = () => {
-  return ( 
+  // This component represents the Contact page of the website
+
+  return (
     <>
-      <Navbar/>
-      <HeroContact/>
-      <ContactUs/>
-      <Footer/>
+      <Navbar /> {/* Render the Navbar component */}
+      <HeroContact /> {/* Render the HeroContact component */}
+      <ContactUs /> {/* Render the ContactUs component */}
+      <Footer /> {/* Render the Footer component */}
     </>
-   );
-}
- 
+  );
+};
+
 export default Contact;
