@@ -47,7 +47,7 @@ button,
 nav {
   margin: 3px;
   border-radius: 30px;
-  border: 2.5px solid rgb(255, 111, 0);
+  border: 2.5px solid rgb(207, 207, 207);
   display: flex;
   background-color: #000000;
   justify-content: space-between;

@@ -4,14 +4,15 @@
 /* body  */
 
 .body {
+
   font-family: "Exo 2", sans-serif;
 background-color:#000000;
 color: rgb(255, 255, 255) !important;
-
-
-
 }
 
+.recipe-body{
+    padding-top: 100px;
+}
 
 
 Navigation{
@@ -206,17 +207,16 @@ margin-left: 9px;
 /* images  */
 
 .image-grid {
+  margin-right: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
-  grid-template-rows: 1fr 1fr;
   gap: 10px;
   padding-left:150px;
   padding-left: 150px;
-
- 
 }
 
 .big-image {
+  border-radius: 20px;
+  transition: transform .5s ease;
   grid-column: 1;
   grid-row: 1 / span 2;
   width: 600px;
@@ -224,10 +224,20 @@ margin-left: 9px;
   object-fit: cover;
 }
 
+.big-image:hover {
+  transform: scale(0.9);
+}
+
 .small-image {
   width: 300px;
+  border-radius: 20px;
   height: 291px;
   object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.small-image:hover {
+  transform: scale(0.9);
 }
 
 .small-image:nth-child(2) {
@@ -298,12 +308,14 @@ margin-left: 9px;
 }
 
 .step {
+  font-size: 20px;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   position: relative;
   left: -50px; /* Start 50px to the left */
-  padding: 10px; /* Add some padding */
-  margin-bottom: 10px;
+  padding: 20px; /* Add some padding */
+  margin-bottom: 5px;
+  border-radius: 22px;
 }
 
 
