@@ -14,7 +14,7 @@ const RecipeList = () => {
         <div className="productcard-div">
    <ul class="cards">
   <li>
-    <a href="" class="card">
+    <div href="" class="card">
       <img src={IMG1} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
@@ -26,12 +26,12 @@ const RecipeList = () => {
             <span class="cardstatus">Servings: 4-5</span>
           </div>
         </div>
-        <Link to="/chickenfeetdetails" class="cardbtn">View Recipe</Link>
+        <Link to="/chicken" class="cardbtn">View Recipe</Link>
       </div>
-    </a>      
+    </div>      
   </li>
   <li>
-    <a href="" class="card">
+  <div href="" class="card">
       <img src={IMG2} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
@@ -45,10 +45,10 @@ const RecipeList = () => {
         </div>
         <Link to="/tribe" class="cardbtn">View Recipe</Link>
       </div>
-    </a>      
+      </div>         
   </li>
   <li>
-    <a href="" class="card">
+  <div href="" class="card">
       <img src={IMG3} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
@@ -60,12 +60,12 @@ const RecipeList = () => {
             <span class="cardstatus">Servings: 4-6</span>
           </div>
         </div>
-        <Link to="/skopocowheaddetails" class="cardbtn">View Recipe</Link>
+        <Link to="/skopo" class="cardbtn">View Recipe</Link>
       </div>
-    </a>      
+      </div>      
   </li>
   <li>
-    <a href="" class="card">
+  <div href="" class="card">
       <img src={IMG4} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
@@ -77,12 +77,12 @@ const RecipeList = () => {
             <span class="cardstatus">Servings: 4-6</span>
           </div>
         </div>
-        <Link to="/morogodetails" class="cardbtn">View Recipe</Link>
+        <Link to="/morogo" class="cardbtn">View Recipe</Link>
       </div>
-    </a>      
+      </div>      
   </li>
   <li>
-    <a href="" class="card">
+  <div href="" class="card">
       <img src={IMG5} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
@@ -94,12 +94,12 @@ const RecipeList = () => {
             <span class="cardstatus">Servings: 7-8</span>
           </div>
         </div>
-        <Link to="/sampdetails" class="cardbtn">View Recipe</Link>
+        <Link to="/samp" class="cardbtn">View Recipe</Link>
       </div>
-    </a>      
+      </div>        
   </li>
   <li>
-    <a href="" class="card">
+  <div href="" class="card">
       <img src={IMG6} class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
@@ -111,9 +111,9 @@ const RecipeList = () => {
             <span class="cardstatus">Servings: 5-6</span>
           </div>
         </div>
-        <Link to="/fatcakedetails" class="cardbtn">View Recipe</Link>
+        <Link to="/fatcake" class="cardbtn">View Recipe</Link>
       </div>
-    </a>      
+    </div>      
   </li>   
 </ul>
         </div>

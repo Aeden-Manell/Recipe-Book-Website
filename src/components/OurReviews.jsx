@@ -28,7 +28,7 @@ const OurReviews = () => {
             </div>
           </div>
           <div className="client-comment">
-            <p>A creamy delight, this samp mix boasts a rich texture and comforting flavor. Easy to prepare, it's a go-to for chilly evenings,perfect accompaniment to any meal.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
           </div>
         </div>
         <div className="testimonial-box">
@@ -51,7 +51,7 @@ const OurReviews = () => {
             </div>
           </div>
           <div className="client-comment">
-            <p>Morogo, a nutritious and versatile green, shines in this vibrant stir-fry. Quick, flavorful, and packed with vitamins, it's a wholesome meal option, Love this , my to go to </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
           </div>
         </div>
         <div className="testimonial-box">
@@ -74,7 +74,7 @@ const OurReviews = () => {
             </div>
           </div>
           <div className="client-comment">
-            <p>Served cold, these marinated chicken feet are a tangy and savory delight, perfect for appetizers or snacks.I love them so much although my kids are scared of them </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
           </div>
         </div>
         <div className="testimonial-box">
@@ -97,7 +97,7 @@ const OurReviews = () => {
             </div>
           </div>
           <div className="client-comment">
-            <p>boasting a smoky flavor and tender texture.whats a traditional meal without skopo, Thank you for the recipe my guest loved it so much.A true taste of African culinary heritage. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
           </div>
         </div>
         <div className="testimonial-box">
@@ -120,7 +120,7 @@ const OurReviews = () => {
             </div>
           </div>
           <div className="client-comment">
-            <p>With each bite of voekoek, one can taste the rich history and cultural significance of South African cuisine. It's more than just a snack, after using the recipe and method , my voekoes remain fresh for day , quick and easy, love it </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
           </div>
         </div>
         

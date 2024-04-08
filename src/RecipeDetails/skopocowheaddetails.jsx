@@ -1,7 +1,7 @@
 // import React from 'react';
 import StarRating from './StarRating';
 import React, { useState } from 'react';
-import './App.css';
+import './details.css';
 import review1 from './images/IMG_7192.jpg';
 import skopo1 from './images/IMG_7219.jpg';
 import skopo2 from './images/IMG_7222.jpg';
@@ -13,7 +13,8 @@ import review2 from './images/IMG_7187.jpg';
 import review3 from './images/IMG_7215.jpg';
 import clock from './images/orange-alarm.jpg';
 import { Link } from "react-router-dom";
-
+import Navbar from "../components/Navbar"; // Import the Navbar component
+import Footer from "../components/Footer"; // Import the Footer component
 
 
 
@@ -86,24 +87,7 @@ const SkopoCowHeadDetails = () => {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 
-<div className="Navigation">
-      <nav class="flex align-center">
-        <div><img src={"https://github.com/Aeden-Manell/Recipe-Book-Website/blob/main/src/assets/Logo.jpeg?raw=true"} alt="Logo" className="logo" /></div>
-        <ul>
-          <li class="big-screens">
-
-            <Link to="/">Home</Link>
-            <Link to="/ourstory">Our Story</Link>
-            <Link to="/ourrecipes">Our Recipes</Link>
-            <Link to="/reviews">Reviews</Link>
-            <Link to="/contact" id="contact-btn">Contact</Link>
-          </li>
-          <li class="small-screens">
-            <i class="fa-solid fa-bars"></i>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <Navbar /> {/* Render the Navbar component */}
 
             <div className="product-title">Skopo(Cow head)</div>   
             
@@ -243,34 +227,7 @@ const SkopoCowHeadDetails = () => {
                             <p>4hrs min</p>
                             </div>
 
-{/* 
-                            <footer id='footer-Div' class="bg-[#ff6f01] py-8 px-10 font-[sans-serif]">
-      <div class="md:max-w-[50%] mx-auto text-center">
-        <a href='javascript:void(0)' class="inline-block"> <img src={Image} alt="Logo" className="footerlogo" /> </a>
-        <h1 className='logoText' >Mama's Traditional Mzansi Cuisine</h1>
-        <p class="text-sm mt-8" id='footer-p'>We are a team of passionate foodies and storytellers dedicated to preserving and sharing the rich culinary heritage of our beloved Mzansi.
- </p>
-
-
-
-      </div>
-      
-      <hr class=" my-8" id='hrFooter' />
-      <div class="md:flex md:item-center">
-        <ul class="flex flex-wrap gap-4">
-          <li class="text-sm">
-            <a  class=' font-semibold hover:underline' id='text'>Terms of Service</a>
-          </li>
-          <li class="text-sm">
-            <a class='font-semibold hover:underline' id='text'>Privacy Policy</a>
-          </li>
-          <li class="text-sm">
-            <a  class=' font-semibold hover:underline' id='text' >Security</a>
-          </li>
-        </ul>
-        <p class='text-sm  ml-auto max-md:mt-4' id='copyright-text'>Copyright © 2024 Mama's Traditional Mzansi Cuisine.<a target='_blank' class="hover:underline mx-1">  </a></p>
-      </div>
-    </footer> */}
+                            <Footer /> {/* Render the Footer component */}
 
 
  </div>
