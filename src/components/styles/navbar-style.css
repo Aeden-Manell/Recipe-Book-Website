@@ -1,10 +1,20 @@
-/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+  font-family: "Inknut Antiqua", serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+ font: 20px/1.5 "Exo 2", sans-serif;
+*/
+
+
 
 /* CSS RESET */
 Navigation{
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: "Inknut Antiqua", serif;
   font-weight: 800;
   margin: 0;
 }
@@ -27,7 +37,7 @@ p {
 
 button,
 .btn {
-  font-family: inherit;
+  font-family: "Inknut Antiqua", serif;
 }
 
 /* CSS RESET ENDS */
@@ -73,6 +83,7 @@ nav li {
 
 nav a{
   text-decoration: none;
+  font-family: "Inknut Antiqua", serif;
   color: #ffffff;
   padding: 0 0.7rem;
   transition: 0.1s ease-in-out;
@@ -88,6 +99,7 @@ nav a:hover {
 
 
 #contact-btn {
+  font-family: "Inknut Antiqua", serif;
 background-color: #ff7701;
 color: #000000;
 border: 3px solid #ff7701;
