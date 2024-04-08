@@ -1,40 +1,64 @@
-import React from "react";
-import "./styles/about-style.css"; // Import the CSS file for the About component
 
 const About = () => {
-  // This component represents the About page of the website
-
-  return (
-    <>
-      <div className="about-div">
-        <div className="text-center">
-          <h2 className="h1-about">About Mama's Traditional Mzansi Cuisine</h2>
-          <div className="p-text">
-            <p className="text-about">
-              With over a decade of experience, Mama's Traditional Mzansi
-              Cuisine has become a trusted online platform for those seeking to
-              explore the diverse flavors and traditional dishes of South Africa.
-              Our website is a treasure trove of recipes that have been passed
-              down through generations, capturing the essence of our country's
-              vibrant food culture.
-              <br></br><br></br>
-              At Mama's Traditional Mzansi Cuisine, we believe that food is more
-              than just sustenance; it is a reflection of our history,
-              traditions, and the warmth of our communities. Each recipe on our
-              website is carefully curated to ensure an authentic and delightful
-              culinary experience for our visitors.
-              <br></br><br></br>
-              Our team of dedicated food enthusiasts and culinary experts work
-              tirelessly to bring you the best of South African cuisine. From
-              hearty stews and braai (barbecue) recipes to fragrant curries and
-              indulgent desserts, we strive to showcase the incredible range of
-              flavors and ingredients that make up our culinary tapestry.
-            </p>
+    return ( 
+        <>
+            <div class="font-[sans-serif] text-gray-800 bg-gray-100 px-6 py-12">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-extrabold">Welcome to Our Website</h2>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12 max-lg:max-w-2xl mx-auto">
+        <div>
+          <p class="mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam, ipsum vel iaculis bibendum, justo turpis ullamcorper mauris, non aliquam nisi purus vel nisl. Integer efficitur turpis in bibendum tincidunt.</p>
+          <p class="mb-4 text-sm">Nulla facilisi. Vestibulum fringilla leo et purus consectetur, vel tincidunt dolor rhoncus. In hac habitasse platea dictumst. Fusce vel sodales elit. Suspendisse potenti. Sed eget consequat nisi.</p>
+          <p class="text-sm">consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula. nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+          <div class="grid xl:grid-cols-3 sm:grid-cols-2 gap-6 mt-12">
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" class="fill-green-500 shrink-0" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000"></path>
+              </svg>
+              <h6 class="text-base font-semibold ml-4">Customization</h6>
+            </div>
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" class="fill-green-500 shrink-0" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000"></path>
+              </svg>
+              <h6 class="text-base font-semibold ml-4">Security</h6>
+            </div>
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" class="fill-green-500 shrink-0" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000"></path>
+              </svg>
+              <h6 class="text-base font-semibold ml-4">Support</h6>
+            </div>
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" class="fill-green-500 shrink-0" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000"></path>
+              </svg>
+              <h6 class="text-base font-semibold ml-4">Performance</h6>
+            </div>
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" class="fill-green-500 shrink-0" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000"></path>
+              </svg>
+              <h6 class="text-base font-semibold ml-4">Global Reach</h6>
+            </div>
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" class="fill-green-500 shrink-0" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000"></path>
+              </svg>
+              <h6 class="text-base font-semibold ml-4">Communication</h6>
+            </div>
           </div>
         </div>
+        <div>
+          <p class="mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam, ipsum vel iaculis bibendum, justo turpis ullamcorper mauris, non aliquam nisi purus vel nisl. Integer efficitur turpis in bibendum tincidunt.</p>
+          <p class="mb-4 text-sm">Nulla facilisi. Vestibulum fringilla leo et purus consectetur, vel tincidunt dolor rhoncus. In hac habitasse platea dictumst. Fusce vel sodales elit. Suspendisse potenti. Sed eget consequat nisi.</p>
+          <p class="text-sm">consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula. nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+        </div>
       </div>
-    </>
-  );
-};
-
+    </div>
+        </>
+     );
+}
+ 
 export default About;

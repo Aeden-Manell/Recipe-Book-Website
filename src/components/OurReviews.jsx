@@ -1,133 +1,136 @@
-import './styles/reviews-style.css';
-import React from 'react';
 
 const OurReviews = () => {
-  return (
-    <section  className='review-div' id="testimonials">
-      <div className="testimonial-heading">Mama's Traditional Mzansi Cuisine
-        <span> Reviews</span>
-      </div>
-      <div className="testimonial-box-container">
-        <div className="testimonial-box">
-          <div className="box-top">
-            <div className="profile">
-              <div className="profile-img">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" alt="Profile" />
-              </div>
-              <div className="name-user">
-                <strong>Oliver Queen</strong>
-                <span>@oliverqueen</span>
-              </div>
+    return ( 
+        <>
+            <div class="my-6 font-[sans-serif] text-[#333]">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-2xl font-extrabold">What our happy client say</h2>
+                    <p class="text-sm mt-2 leading-relaxed">Veniam proident aute magna anim excepteur et ex consectetur velit ullamco veniam minim aute sit.</p>
+                </div>
+                <div class="grid md:grid-cols-3 md:gap-6 max-md:gap-10 max-md:justify-center text-center mt-12">
+                    <div class="max-w-[350px] h-auto p-4 rounded-md shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] ">
+                        <div class="flex flex-col items-center">
+                            <img src="https://readymadeui.com/team-1.webp" class="w-80 object-contain object-top rounded-md" />
+                            <div class="mt-4">
+                                <h4 class="text-sm font-extrabold">John Doe</h4>
+                                <p class="text-xs text-gray-400 font-extrabold mt-1">CEO, Company</p>
+                            </div>
+                            <div class="flex justify-center space-x-1 mt-4">
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm leading-relaxed">The service was amazing. I never had to wait that long for my food. The staff was friendly and attentive, and the delivery was impressively prompt.</p>
+                        </div>
+                    </div>
+                    <div class="max-w-[350px] h-auto p-4 rounded-md shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] ">
+                        <div class="flex flex-col items-center">
+                            <img src="https://readymadeui.com/team-2.webp" class="w-80 object-contain object-top rounded-md" />
+                            <div class="mt-4">
+                                <h4 class="text-sm font-extrabold">Mark Adair</h4>
+                                <p class="text-xs text-gray-400 font-extrabold mt-1">CEO, Company</p>
+                            </div>
+                            <div class="flex justify-center space-x-1 mt-4">
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm leading-relaxed">The service was amazing. I never had to wait that long for my food. The staff was friendly and attentive, and the delivery was impressively prompt.</p>
+                        </div>
+                    </div>
+                    <div class="max-w-[350px] h-auto p-4 rounded-md shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] ">
+                        <div class="flex flex-col items-center">
+                            <img src="https://readymadeui.com/team-4.webp" class="w-80 object-contain object-top rounded-md" />
+                            <div class="mt-4">
+                                <h4 class="text-sm font-extrabold">Simon Konecki</h4>
+                                <p class="text-xs text-gray-400 font-extrabold mt-1">CEO, Company</p>
+                            </div>
+                            <div class="flex justify-center space-x-1 mt-4">
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm leading-relaxed">The service was amazing. I never had to wait that long for my food. The staff was friendly and attentive, and the delivery was impressively prompt.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="reviews">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="far fa-star"></i>
-            </div>
-          </div>
-          <div className="client-comment">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-          </div>
         </div>
-        <div className="testimonial-box">
-          <div className="box-top">
-            <div className="profile">
-              <div className="profile-img">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" alt="Profile" />
-              </div>
-              <div className="name-user">
-                <strong>Barry Allen</strong>
-                <span>@barryallen</span>
-              </div>
-            </div>
-            <div className="reviews">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="far fa-star"></i>
-            </div>
-          </div>
-          <div className="client-comment">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-          </div>
-        </div>
-        <div className="testimonial-box">
-          <div className="box-top">
-            <div className="profile">
-              <div className="profile-img">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" alt="Profile" />
-              </div>
-              <div className="name-user">
-                <strong>Barry Allen</strong>
-                <span>@barryallen</span>
-              </div>
-            </div>
-            <div className="reviews">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="far fa-star"></i>
-            </div>
-          </div>
-          <div className="client-comment">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-          </div>
-        </div>
-        <div className="testimonial-box">
-          <div className="box-top">
-            <div className="profile">
-              <div className="profile-img">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" alt="Profile" />
-              </div>
-              <div className="name-user">
-                <strong>Barry Allen</strong>
-                <span>@barryallen</span>
-              </div>
-            </div>
-            <div className="reviews">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="far fa-star"></i>
-            </div>
-          </div>
-          <div className="client-comment">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-          </div>
-        </div>
-        <div className="testimonial-box">
-          <div className="box-top">
-            <div className="profile">
-              <div className="profile-img">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" alt="Profile" />
-              </div>
-              <div className="name-user">
-                <strong>Barry Allen</strong>
-                <span>@barryallen</span>
-              </div>
-            </div>
-            <div className="reviews">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="far fa-star"></i>
-            </div>
-          </div>
-          <div className="client-comment">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-          </div>
-        </div>
-        
-      </div>
-    </section>
-  );
-};
-
+        </>
+     );
+}
+ 
 export default OurReviews;
-
